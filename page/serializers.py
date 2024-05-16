@@ -16,4 +16,3 @@ class ClientSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'phone', 'email','price','quantity','house')
 
 
-    

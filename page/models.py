@@ -24,3 +24,12 @@ class Client(models.Model):
     def __str__(self):
         return self.name
 
+
+class Order(models.Model):
+    date = models.DateTimeField(auto_now_add=True)
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+
+
+    def __str__(self):
+        return self.client.name
+
