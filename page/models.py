@@ -31,5 +31,7 @@ class Order(models.Model):
 
 
     def __str__(self):
-        return self.client.name
+        return f"{self.client.name} yaratildi "
+
+
 
